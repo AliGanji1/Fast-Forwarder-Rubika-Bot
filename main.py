@@ -1,18 +1,14 @@
-from pyrubi import Bot
-from datetime import datetime
-from threading import Thread
-from time import sleep
-
-# Rubika : @Persian_Python, @Pyrubika, @Pyrubi_Example
-
-#------------------
 # شناسه اکانت
 auth = 'iufidjgjlosdajkjkfo4esgqzgr'
 # لینک پست
 post_link = 'https://rubika.ir/Persian_PyThon/DDBEJAHJDBCBAFE'
 # زمان استراحت هربار ارسال (ثانیه)
 speed_send = 0.5
-#------------------
+
+from pyrubi import Bot
+from datetime import datetime
+from threading import Thread
+from time import sleep
 
 bot = Bot(auth)
 post_info = bot.get_link_info(post_link)
