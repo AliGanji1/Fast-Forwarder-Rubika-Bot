@@ -3,7 +3,7 @@ auth = 'iufidjgjlosdajkjkfo4esgqzgr'
 # لینک پست
 post_link = 'https://rubika.ir/Persian_PyThon/DDBEJAHJDBCBAFE'
 # زمان استراحت هربار ارسال (ثانیه)
-speed_send = 0.5
+sleep_send = 0.5
 
 from pyrubi import Bot
 from datetime import datetime
@@ -35,6 +35,6 @@ while True:
             if chat_id.startswith('u0') or chat_id.startswith('g0'):
                 count_send += 1
                 Thread(target=forward_post, args=[chat_id, chat]).start()
-                sleep(speed_send)
+                sleep(sleep_send)
     except:
         continue
